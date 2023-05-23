@@ -1,0 +1,193 @@
+:root{
+    --bright-text-color: #dce7da;
+    --dark-text-color: #1e3218;
+    --middle-text-color: #2a3e00;
+    --bright-bg-color: #dce7da;
+    --dark-bg-color: #1e3218;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Garamond", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+#sign-JRRT{
+    font-family: "ElvenCommonSpeak", "Garamond", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+html{
+    color: var(--dark-text-color);
+    background-color: var(--bright-text-color);
+}
+
+a{
+    cursor: pointer;
+}
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+    
+    overflow: hidden;
+}
+
+/*header
+
+style*/
+header *{
+    color: var(--bright-text-color);
+    background-color: var(--dark-bg-color);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#poemas-title{/*h1*/
+    font-size: 1.2em;
+    font-family: "Garamond", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-variant: small-caps;
+
+    color: var(--bright-text-color);
+    background-color: var(--dark-bg-color);
+
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--middle-text-color);
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+@media (max-width: 450px){
+    nav{
+        flex-wrap: wrap;
+    }    
+}
+
+nav a{
+    flex-basis: 100%;
+
+    text-align: center;
+    border: 1px solid var(--middle-text-color);
+    padding: 5px;
+}
+
+
+/*Main
+
+style*/
+main{
+    margin-top: 90px;
+    width: 100%;
+}
+
+#main-banner{
+    position: relative;
+    height: 500px;
+    background: url(../images/namarie-tengwar.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 55%;
+}
+
+.dark{
+    background-color: rgba(17, 27, 14, 0.938);
+    color: var(--bright-text-color);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#main-banner a{
+    font-size: xx-large;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--bright-text-color);
+}
+
+main h2{
+    font-variant: small-caps;
+    font-size: larger;
+}
+
+main i{
+    font-style: italic;
+    margin-bottom: 30px;
+    display: block;
+}
+
+main p{
+    margin-bottom: 30px;
+}
+
+main span{
+    display: block;
+    line-height: 150%;
+}
+
+
+/* Section
+
+settings */
+
+section{
+    margin-top: 100px;
+}
+
+.list a, .list a:visited{
+    color: var(--dark-text-color);
+    display: block;
+    padding: 15px;
+}
+
+.list h2{
+    margin-bottom: 30px;
+}
+
+.return{
+    color: var(--dark-text-color);
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    font-variant: small-caps;
+    font-size: large;
+    display: block;
+}
+
+footer{
+    text-align: center;
+    border-top: 1px solid var(--middle-text-color);
+    padding-top: 15px;
+    margin-top: 25px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+footer *{
+    color: var(--dark-text-color);
+}
